@@ -7,7 +7,7 @@ import { GlobalContext } from '../../../context/GlobalContext'
 import { Container, Button } from '../../'
 
 const GridWrapper = styled.div`
-   padding: 3em 0;
+   padding: 2em 0;
 `
 
 const GridInner = styled.div`
@@ -19,7 +19,7 @@ const GridRow = styled.div`
    flex-wrap: wrap;
    flex-direction: row-reverse;
    align-items: center;
-   padding: 1.8em 0;
+   padding: 1.25em 0;
 
    @media ${props => props.theme.breakpoints.md } {
       text-align: left;
@@ -28,6 +28,17 @@ const GridRow = styled.div`
 
 const Text = styled.div`
    flex: 0 0 100%;
+   padding: 0 .5em;
+
+   h2{
+      font-size: 1.6rem;
+      line-height: 1.5em;
+      margin-bottom: .4em;
+   }
+
+   a{
+      margin-top: 2em;
+   }
 
    @media ${props => props.theme.breakpoints.md } {
       flex: 0 0 55%;
@@ -37,6 +48,7 @@ const Text = styled.div`
 
 const Image = styled.div`
    flex: 0 0 100%;
+   margin-top: 2.5em;
 
    button{
       margin-top: 1em;
@@ -94,7 +106,7 @@ export const GridBox = () => {
                   <Text>
                      <h2>Ta kontroll och simma lugn</h2>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae animi, beatae, velit, fuga corrupti unde aspernatur possimus ipsa id ex alias nulla? Blanditiis distinctio accusantium quaerat eius molestias aspernatur.</p>
-                     <Button>
+                     <Button btnStyle="main">
                         <Link to="/about">Läs mer om Let's Furnish</Link>
                      </Button>
                   </Text>

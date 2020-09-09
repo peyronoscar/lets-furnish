@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Container } from '../../'
+import { Badge } from '../../../icons/Badge'
 
 const ServicesWrapper = styled.div`
    background: #f2f2f2;
@@ -29,15 +30,15 @@ export const Services = () => {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, nulla? Consectetur vel est architecto incidunt aliquam molestias magni odio! Tempora iusto corporis placeat esse fugiat rerum sapiente, dolores quae autem!</p>
             <Items>
                <Item>
-                  <span>SVG</span>
+                  <Badge />
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
                </Item>
                <Item>
-                  <span>SVG</span>
+                  <Badge />
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
                </Item>
                <Item>
-                  <span>SVG</span>
+                  <Badge />
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
                </Item>
             </Items>

@@ -39,7 +39,7 @@ export default {
    },
    fonts: {
       sizes:{
-         default: "16px",
+         default: "15px",
          sm: "16px",
          md: "16px",
          lg: "17px",

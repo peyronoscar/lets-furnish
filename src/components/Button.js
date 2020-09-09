@@ -20,6 +20,11 @@ const ButtonWrapper = styled.span`
       background: #fff;
       color: #000;
    }
+
+   &.main > * {
+      background: ${props => props.theme.colors.main};
+      color: #000;
+   }
 `
 
 export const Button = (props) => {
