@@ -26,6 +26,12 @@ export const Layout = ({children}) => {
    }, [globalState.isScollLocked]);
 
    useEffect(() => {
+      if(window.scrollY > 0){
+         document.querySelector('header').style.background = '#fff';
+      }else{
+         document.querySelector('header').style.background = '';
+      }
+      
       window.addEventListener('scroll', () => {
          if(window.scrollY > 0){
             document.querySelector('header').style.background = '#fff';

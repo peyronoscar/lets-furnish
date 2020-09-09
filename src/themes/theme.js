@@ -29,7 +29,7 @@ export default {
       width:{
          default: "100%",
          sm: "94%",
-         md: "86%",
+         md: "96%",
          lg: "80%",
          xl: "85%",
          ul: "85%",

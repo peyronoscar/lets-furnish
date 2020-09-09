@@ -7,7 +7,7 @@ import { GlobalContext } from '../../../context/GlobalContext'
 import { Container, Button } from '../../'
 
 const GridWrapper = styled.div`
-   padding: 2em 0;
+   padding: 2.4em 0;
 `
 
 const GridInner = styled.div`
@@ -15,23 +15,25 @@ const GridInner = styled.div`
 `
 
 const GridRow = styled.div`
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
+   display: grid;
+   grid-template-columns: 1fr;
    align-items: center;
    padding: 1.25em 0;
 
    @media ${props => props.theme.breakpoints.md } {
       text-align: left;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 6em;
+      direction: rtl;
    }
 `
 
 const Text = styled.div`
-   flex: 0 0 100%;
    padding: 0 .5em;
 
    h2{
       font-size: 1.6rem;
+      font-weight: 600;
       line-height: 1.5em;
       margin-bottom: .4em;
    }
@@ -41,17 +43,21 @@ const Text = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 55%;
+      grid-column: span 6;
+      padding: 0;
    }
 `
 
 
 const Image = styled.div`
-   flex: 0 0 100%;
    margin-top: 2.5em;
+   text-align: center;
 
    button{
-      margin-top: 1em;
+      margin-top: 1.2em;
+      font-weight: 600;
+      font-size: .9em;
+      color: ${props => props.theme.colors.main};
    }
 
    &.hidden-mobile{
@@ -59,7 +65,7 @@ const Image = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 45%;
+      grid-column: span 6;
 
       &.hidden-mobile{
          display: block;
@@ -99,7 +105,7 @@ export const GridBox = () => {
                      </div>
                   </Image>
                </GridRow>
-               <GridRow>
+               <GridRow className="grid-row--2">
                   <Image className="hidden-mobile">
                      <Img fluid={data.file.childImageSharp.fluid} />
                   </Image>
