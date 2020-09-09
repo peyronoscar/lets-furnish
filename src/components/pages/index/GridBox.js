@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import { GlobalContext } from '../../../context/GlobalContext'
 import { Container, Button } from '../../'
 
 const GridWrapper = styled.div`
-
+   padding: 3em 0;
 `
 
 const GridInner = styled.div`
@@ -18,6 +19,7 @@ const GridRow = styled.div`
    flex-wrap: wrap;
    flex-direction: row-reverse;
    align-items: center;
+   padding: 1.8em 0;
 
    @media ${props => props.theme.breakpoints.md } {
       text-align: left;
@@ -36,6 +38,10 @@ const Text = styled.div`
 const Image = styled.div`
    flex: 0 0 100%;
 
+   button{
+      margin-top: 1em;
+   }
+
    &.hidden-mobile{
       display: none;
    }
@@ -51,6 +57,19 @@ const Image = styled.div`
 `
 
 export const GridBox = () => {
+
+   const data = useStaticQuery(graphql`
+      query indexGridQuery {
+         file(relativePath: {eq: "thumbnail.png"}) {
+            childImageSharp {
+               fluid{
+                  ...GatsbyImageSharpFluid_withWebp
+               }
+            }
+         }
+      }
+   `)
+
    const { setIsModalOpen } = useContext(GlobalContext);
    return (
       <GridWrapper>
@@ -62,13 +81,15 @@ export const GridBox = () => {
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat quae nihil neque rerum laboriosam mollitia. Illo vitae dolore sunt distinctio ullam ratione assumenda, eveniet ea in unde hic quidem.</p>
                   </Text>
                   <Image>
-                     <h2>Image</h2>
-                     <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
+                     <Img fluid={data.file.childImageSharp.fluid} />
+                     <div>
+                        <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
+                     </div>
                   </Image>
                </GridRow>
                <GridRow>
                   <Image className="hidden-mobile">
-                     <h2>Image</h2>
+                     <Img fluid={data.file.childImageSharp.fluid} />
                   </Image>
                   <Text>
                      <h2>Ta kontroll och simma lugn</h2>

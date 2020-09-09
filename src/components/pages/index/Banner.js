@@ -7,6 +7,7 @@ import { Container, Button } from '../../'
 const BannerWrapper = styled.div`
    background: ${props => props.theme.colors.green};
    color: #fff;
+   padding: 3em 0;
 `
 
 const BannerInner = styled.div`

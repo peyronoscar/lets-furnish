@@ -27,7 +27,7 @@ const Image = styled.div`
 
 export const Hero = () => {
    const data = useStaticQuery(graphql`
-      query StaticQuery {
+      query indexHeroQuery {
          file(relativePath: {eq: "hand.png"}) {
             childImageSharp {
                fixed{

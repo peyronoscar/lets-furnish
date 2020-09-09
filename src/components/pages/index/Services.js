@@ -5,6 +5,7 @@ import { Container } from '../../'
 
 const ServicesWrapper = styled.div`
    background: #f2f2f2;
+   padding: 3em 0;
 `
 
 const Items = styled.div`
