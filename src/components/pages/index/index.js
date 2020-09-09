@@ -1,2 +1,5 @@
 export * from './Hero'
 export * from './GridBox'
+export * from './Services'
+export * from './Banner'
+export * from './Reviews'

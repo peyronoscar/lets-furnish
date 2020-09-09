@@ -10,27 +10,40 @@ const GridWrapper = styled.div`
 `
 
 const GridInner = styled.div`
-
+   text-align: center;
 `
 
 const GridRow = styled.div`
    display: flex;
    flex-wrap: wrap;
+   flex-direction: row-reverse;
+   align-items: center;
+
+   @media ${props => props.theme.breakpoints.md } {
+      text-align: left;
+   }
 `
 
 const Text = styled.div`
    flex: 0 0 100%;
+
+   @media ${props => props.theme.breakpoints.md } {
+      flex: 0 0 55%;
+   }
 `
+
 
 const Image = styled.div`
    flex: 0 0 100%;
 
-   .hidden-mobile{
+   &.hidden-mobile{
       display: none;
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      .hidden-mobile{
+      flex: 0 0 45%;
+
+      &.hidden-mobile{
          display: block;
       }
    }
@@ -50,9 +63,13 @@ export const GridBox = () => {
                   </Text>
                   <Image>
                      <h2>Image</h2>
+                     <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
                   </Image>
                </GridRow>
                <GridRow>
+                  <Image className="hidden-mobile">
+                     <h2>Image</h2>
+                  </Image>
                   <Text>
                      <h2>Ta kontroll och simma lugn</h2>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae animi, beatae, velit, fuga corrupti unde aspernatur possimus ipsa id ex alias nulla? Blanditiis distinctio accusantium quaerat eius molestias aspernatur.</p>
@@ -60,10 +77,6 @@ export const GridBox = () => {
                         <Link to="/about">Läs mer om Let's Furnish</Link>
                      </Button>
                   </Text>
-                  <Image>
-                     <h2 className="hidden-mobile">Image</h2>
-                     <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
-                  </Image>
                </GridRow>
             </GridInner>
          </Container>

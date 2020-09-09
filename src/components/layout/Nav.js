@@ -123,13 +123,13 @@ export const Nav = () => {
                <div className="nav-links--desktop">
                   <ul >
                      <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">Hem</Link>
                      </li>
                      <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">Om Let's Furnish</Link>
                      </li>
                      <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact">Kontakt</Link>
                      </li>
                      <li>
                         <Link to="/sign-up" className="btn--dark-border">Kom igång</Link>

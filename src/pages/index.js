@@ -1,7 +1,7 @@
 import React from "react"
 
 import { SEO, ContactForm } from "../components/"
-import { Hero, GridBox } from "../components/pages/index/"
+import { Hero, GridBox, Services, Banner, Reviews } from "../components/pages/index/"
 
 const HomePage = () => {
    return (
@@ -9,6 +9,9 @@ const HomePage = () => {
          <SEO title="Home" />
          <Hero />
          <GridBox />
+         <Services />
+         <Banner />
+         <Reviews />
          <ContactForm />
       </>
    )

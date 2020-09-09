@@ -12,7 +12,8 @@ export default {
       text: "#121212",
       light: "#FBF8F2",
       darkBlue: "#00003D",
-      orange: "#faa5aa"
+      orange: "#faa5aa",
+      green: "#A5A58D"
    },
    grid: {
       gaps:{

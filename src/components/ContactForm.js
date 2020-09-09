@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Container } from './'
+import { Container, Button } from './'
 
 const FormWrapper = styled.div`
    background: ${props => props.theme.colors.light};
@@ -67,7 +67,9 @@ export const ContactForm = () => {
                   <label htmlFor="email">E-postadress</label>
                   <input type="email" name="email" placeholder="Skriv in din e-postadress" />
                </FormItem>
-               <input type="submit" value="Skicka uppgifter" className="btn btn--dark"/>
+               <Button btnStyle="dark">
+                  <input type="submit" value="Skicka uppgifter"/>
+               </Button>
             </Form>
          </Container>
       </FormWrapper>
