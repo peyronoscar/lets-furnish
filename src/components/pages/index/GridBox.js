@@ -8,6 +8,10 @@ import { Container, Button } from '../../'
 
 const GridWrapper = styled.div`
    padding: 2.4em 0;
+
+   @media ${props => props.theme.breakpoints.md } {
+      padding: 2.7em 0;
+   }
 `
 
 const GridInner = styled.div`
@@ -15,21 +19,22 @@ const GridInner = styled.div`
 `
 
 const GridRow = styled.div`
-   display: grid;
-   grid-template-columns: 1fr;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   justify-content: space-between;
    align-items: center;
    padding: 1.25em 0;
 
    @media ${props => props.theme.breakpoints.md } {
       text-align: left;
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: 6em;
-      direction: rtl;
+      padding: 3.2em 0;
    }
 `
 
 const Text = styled.div`
    padding: 0 .5em;
+   flex: 0 0 100%;
 
    h2{
       font-size: 1.6rem;
@@ -43,13 +48,13 @@ const Text = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      grid-column: span 6;
-      padding: 0;
+      flex: 0 0 48%;
    }
 `
 
 
 const Image = styled.div`
+   flex: 0 0 100%;
    margin-top: 2.5em;
    text-align: center;
 
@@ -65,7 +70,8 @@ const Image = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      grid-column: span 6;
+      flex: 0 0 43%;
+      margin-top: 0;
 
       &.hidden-mobile{
          display: block;

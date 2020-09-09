@@ -30,12 +30,12 @@ export default {
          default: "100%",
          sm: "94%",
          md: "96%",
-         lg: "80%",
+         lg: "85%",
          xl: "85%",
          ul: "85%",
       },
       padding: "20px",
-      maxWidth: "1400px"
+      maxWidth: "1300px"
    },
    fonts: {
       sizes:{
@@ -47,5 +47,5 @@ export default {
          ul: "18px",
       }
    },
-   maxWidth: "1400px"
+   maxWidth: "1300px"
 }
