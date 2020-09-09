@@ -47,7 +47,7 @@ const NavList = styled.ul`
 `
 
 const NavBtn = styled.div`
-   margin-bottom: 3.5rem;
+   margin: 0 .8rem 3.5rem .8rem;
 
    a{
       display: block;
