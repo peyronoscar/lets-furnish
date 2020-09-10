@@ -1,7 +1,7 @@
 import React from "react"
 
-import { SEO } from "../components/"
-import { Hero } from "../components/pages/about/"
+import { SEO, ContactForm } from "../components/"
+import { Hero, GridBox, CallToAction } from "../components/pages/about/"
 
 const AboutPage = () => {
 
@@ -9,6 +9,9 @@ const AboutPage = () => {
       <>
          <SEO title="About" />
          <Hero />
+         <GridBox />
+         <CallToAction />
+         <ContactForm headline="Bli en av våra samarbetspartners" />
       </>
    )
 }

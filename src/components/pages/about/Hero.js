@@ -8,7 +8,24 @@ const HeroWrapper = styled.div`
 `
 
 const Content = styled.div`
+   text-align: center;
+   padding-top: 2em;
 
+   span{
+      display: block;
+      font-size: .95em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      margin-bottom: .8em;
+   }
+
+   h1{
+      font-size: 1.8em;
+      font-weight: 600;
+      line-height: 1.3em;
+      margin: 0;
+   }
 `
 
 export const Hero = () => {
@@ -16,10 +33,8 @@ export const Hero = () => {
       <HeroWrapper>
          <Container>
             <Content>
-               <h1>Om Let's Furnish</h1>
-               <p>
-                  molestias facere praesentium perferendis qui temporibus id, adipisci pariatur quae voluptates placeat eius ut? Temporibus facere nostrum, eaque quod voluptate magni sunt quam tenetur exercitationem atque quas? Debitis soluta porro odit facilis tempore totam quidem enim autem natus voluptatem maiores nulla explicabo quae sunt, reprehenderit ad voluptates? Iusto nemo quibusdam voluptatem necessitatibus hic ducimus harum veniam! Aut maiores maxime dolor provident sed nam debitis beatae adipisci hic. Aliquid totam veniam praesentium minus ipsa voluptatum expedita. Natus ducimus, soluta quis dignissimos voluptates atque necessitatibus in, explicabo itaque minus eaque dolorum perferendis. Ullam tempora, hic ea, praesentium repellendus consectetur reiciendis reprehenderit et odit nemo soluta omnis fugit repudiandae expedita vitae quo dolorum inventore optio placeat? Iure, temporibus eos sed quas ratione vero ad ducimus voluptates. Voluptatem rerum unde labore quasi, repudiandae, provident magnam ipsa quam soluta maiores ducimus ullam, quis quae at obcaecati earum. Eos quidem adipisci voluptate nesciunt quibusdam. Fugiat.
-               </p>
+               <span>Om Let's Furnish</span>
+               <h1>För dig som vill nå ut till fler kunder</h1>
             </Content>
          </Container>
       </HeroWrapper>

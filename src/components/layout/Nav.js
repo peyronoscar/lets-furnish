@@ -34,11 +34,11 @@ const NavInner = styled.div`
       }
 
       li:last-child a{
-         margin-left: 1.3em;
+         margin-left: 1.2em;
       }
 
       a{
-         padding: .6em 1.3em;
+         padding: .6em 1.2em;
          border-radius: 4px;
          font-size: .95em;
          font-weight: 500;
