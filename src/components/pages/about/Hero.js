@@ -4,7 +4,11 @@ import styled from 'styled-components'
 import { Container } from '../../'
 
 const HeroWrapper = styled.div`
-   padding-top: 6rem;
+   padding-top: 4.8em;
+
+   @media ${props => props.theme.breakpoints.md } {
+      padding-top: 8em;
+   }
 `
 
 const Content = styled.div`
@@ -25,6 +29,15 @@ const Content = styled.div`
       font-weight: 600;
       line-height: 1.3em;
       margin: 0;
+   }
+
+   @media ${props => props.theme.breakpoints.md } {
+      text-align: left;
+
+      h1{
+         font-size: 2.6em;
+         max-width: 580px;
+      }
    }
 `
 

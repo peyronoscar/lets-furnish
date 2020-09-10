@@ -1,10 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
-import { GlobalContext } from '../../../context/GlobalContext'
-import { Container, Button } from '../../'
+import { Container, Button, Thumbnail } from '../../'
 
 const GridWrapper = styled.div`
    padding: 2.7em 0;
@@ -57,48 +55,8 @@ const Text = styled.div`
    }
 `
 
-const Image = styled.div`
-   flex: 0 0 100%;
-   margin-top: 2.5em;
-   text-align: center;
-
-   button{
-      margin-top: 1.2em;
-      font-weight: 600;
-      font-size: .9em;
-      color: ${props => props.theme.colors.main};
-   }
-
-   &.hidden-mobile{
-      display: none;
-   }
-
-   @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 43%;
-      margin-top: 0;
-
-      &.hidden-mobile{
-         display: block;
-      }
-   }
-
-`
-
 export const GridBox = () => {
 
-   const data = useStaticQuery(graphql`
-      query indexGridQuery {
-         file(relativePath: {eq: "thumbnail.png"}) {
-            childImageSharp {
-               fluid{
-                  ...GatsbyImageSharpFluid_withWebp
-               }
-            }
-         }
-      }
-   `)
-
-   const { setIsModalOpen } = useContext(GlobalContext);
    return (
       <GridWrapper>
          <Container>
@@ -108,17 +66,10 @@ export const GridBox = () => {
                      <h2>För dig som vill nå ut till fler kunder</h2>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat quae nihil neque rerum laboriosam mollitia. Illo vitae dolore sunt distinctio ullam ratione assumenda, eveniet ea in unde hic quidem.</p>
                   </Text>
-                  <Image>
-                     <Img fluid={data.file.childImageSharp.fluid} />
-                     <div>
-                        <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
-                     </div>
-                  </Image>
+                  <Thumbnail modal={true} />
                </GridRow>
                <GridRow className="grid-row--2">
-                  <Image className="hidden-mobile">
-                     <Img fluid={data.file.childImageSharp.fluid} />
-                  </Image>
+                  <Thumbnail className="hidden-mobile" />
                   <Text>
                      <h2>Ta kontroll och simma lugn</h2>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae animi, beatae, velit, fuga corrupti unde aspernatur possimus ipsa id ex alias nulla? Blanditiis distinctio accusantium quaerat eius molestias aspernatur.</p>

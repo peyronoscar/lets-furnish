@@ -162,9 +162,9 @@ export const Footer = () => {
                      <h6>Let's Furnish</h6>
                      <ul>
                         <li><Link to="/">Hem</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/sign-up">Sign Up</Link></li>
+                        <li><Link to="/about">Om oss</Link></li>
+                        <li><Link to="/contact">Kontakt</Link></li>
+                        <li><Link to="/sign-up">Anslut</Link></li>
                      </ul>
                   </FooterList>
                   <FooterList>
