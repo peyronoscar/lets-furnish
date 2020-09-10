@@ -83,7 +83,7 @@ export const OverlayNav = () => {
                      </li>
                      <li>
                         <Link
-                        to="/"
+                        to="/#reviews"
                         onClick={() => setIsNavOpen(false)}
                         >Recensioner</Link>
                      </li>

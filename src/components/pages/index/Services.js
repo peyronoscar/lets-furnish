@@ -23,6 +23,12 @@ const Heading = styled.div`
       font-size: 2rem;
       margin-bottom: .6em;
    }
+
+   @media ${props => props.theme.breakpoints.md } {
+      h2{
+         font-weight: 600;
+      }
+   }
 `
 
 const Items = styled.div`

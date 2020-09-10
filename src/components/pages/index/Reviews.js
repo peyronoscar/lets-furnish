@@ -22,6 +22,14 @@ const Heading = styled.div`
       font-size: 2rem;
       margin-bottom: .6em;
    }
+
+   @media ${props => props.theme.breakpoints.md } {
+      margin-bottom: 4em;
+
+      h2{
+         font-weight: 600;
+      }
+   }
 `
 
 const Items = styled.div`
@@ -64,7 +72,7 @@ const Item = styled.div`
 
 export const Reviews = () => {
    return (
-      <ReviewsWrapper>
+      <ReviewsWrapper id="reviews">
          <Container>
             <Heading>
                <h2>Hör från våra samarbetspartners</h2>

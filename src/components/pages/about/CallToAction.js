@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { Button, Container } from '../../'
 
 const CallWrapper = styled.div`
-   padding: 3em 0;
+   padding: 4em 0 5em 0;
    text-align: center;
 
    h2{
@@ -15,7 +15,18 @@ const CallWrapper = styled.div`
    }
 
    p{
+      max-width: 800px;
+      margin: 0 auto;
       margin-bottom: 2em;
+   }
+
+   @media ${props => props.theme.breakpoints.md } {
+      h2{
+         font-size: 2.1em;
+         margin-bottom: .6em;
+      }
+
+      padding: 4.5em 0 8em 0;
    }
 `
 

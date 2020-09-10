@@ -9,7 +9,7 @@ import { OverlayNav } from './'
 
 const NavWrapper = styled.nav`
    @media ${props => props.theme.breakpoints.lg } {
-      padding: 1.3em 0;
+      padding: 1.5em 0;
    }
 `
 
