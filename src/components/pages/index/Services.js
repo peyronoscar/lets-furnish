@@ -5,33 +5,49 @@ import { Container } from '../../'
 import { Badge } from '../../../icons/Badge'
 
 const ServicesWrapper = styled.div`
-   background: #f2f2f2;
+   background: #fbfbfb;
    padding: 3em 0;
    text-align: center;
+
+   @media ${props => props.theme.breakpoints.md } {
+      padding: 5em 0;
+   }
 `
 
 const Heading = styled.div`
-   margin-bottom: 1em;
+   max-width: 900px;
+   margin: 0 auto;
+   margin-bottom: 2em;
+
+   h2{
+      font-size: 2rem;
+      margin-bottom: .6em;
+   }
 `
 
 const Items = styled.div`
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 `
 
 const Item = styled.div`
    flex: 0 0 100%;
-   padding: 2em 0;
+   padding: 1.6em 1em;
 
    svg{
       width: 33%;
       max-width: 100px;
       height: auto;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
+   }
+
+   p{
+      font-size: .96em;
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 33.333%;
+      flex: 0 0 31%;
    }
 `
 

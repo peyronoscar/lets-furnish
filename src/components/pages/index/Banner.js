@@ -6,12 +6,19 @@ import { Container, Button } from '../../'
 
 const BannerWrapper = styled.div`
    background: ${props => props.theme.colors.green};
-   padding: 3em 0;
+   padding: 4.5em 0;
+   text-align: center;
+   
+   @media ${props => props.theme.breakpoints.md } {
+      text-align: left;
+      padding: 6.5em 0;
+   }
 `
 
 const BannerInner = styled.div`
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 `
 
 const Heading = styled.div`
@@ -19,10 +26,19 @@ const Heading = styled.div`
 
    h2{
       color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.5em;
+      margin-bottom: .7em;
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 50%;
+      flex: 0 0 47%;
+
+      h2{
+         font-size: 2.3rem;
+         line-height: 1.4em;
+      }
    }
 `
 
@@ -31,6 +47,8 @@ const Text = styled.div`
 
    p{
       color: #fff;
+      margin-bottom: 2.5em;
+      font-weight: 500;
    }
 
    @media ${props => props.theme.breakpoints.md } {

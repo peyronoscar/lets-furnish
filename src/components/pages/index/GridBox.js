@@ -7,7 +7,7 @@ import { GlobalContext } from '../../../context/GlobalContext'
 import { Container, Button } from '../../'
 
 const GridWrapper = styled.div`
-   padding: 2.4em 0;
+   padding: 2.7em 0;
 
    @media ${props => props.theme.breakpoints.md } {
       padding: 2.7em 0;
