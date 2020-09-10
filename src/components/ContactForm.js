@@ -20,6 +20,7 @@ const FormHeader = styled.div`
       margin: 0;
       font-size: 1.9rem;
       font-weight: 600;
+      line-height: 1.17em;
    }
 
    @media ${props => props.theme.breakpoints.md } {
@@ -135,7 +136,7 @@ export const ContactForm = ({ headline, textarea }) => {
                : null }
                <ButtonWrapper className={ textarea ? 'float-left' : 'float-right' }>
                   <Button btnStyle="dark">
-                     <input type="submit" value="Skicka uppgifter"/>
+                     <input type="submit" value={ textarea ? 'Skicka meddelande' : 'Skicka uppgifter' }/>
                   </Button>
                </ButtonWrapper>
             </Form>

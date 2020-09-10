@@ -126,6 +126,10 @@ const Copyright = styled.div`
    padding: 1.4em 0;
    text-align: center;
 
+   p{
+      font-weight: 500;
+   }
+
    @media ${props => props.theme.breakpoints.md } {
       text-align: left;
       font-size: .9em;

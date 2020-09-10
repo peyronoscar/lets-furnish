@@ -28,6 +28,10 @@ const Items = styled.div`
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+
+   @media ${props => props.theme.breakpoints.md } {
+      margin-top: 3em;
+   }
 `
 
 const Item = styled.div`
@@ -43,6 +47,14 @@ const Item = styled.div`
 
    p{
       font-size: .96em;
+   }
+
+   span{
+      display: block;
+      font-size: .8em;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 1.5em;
    }
 
    @media ${props => props.theme.breakpoints.md } {
@@ -62,14 +74,17 @@ export const Reviews = () => {
                <Item>
                   { [...Array(5)].map((e, i) => <Star />)}
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <span>Foundly Group</span>
                </Item>
                <Item>
                   { [...Array(5)].map((e, i) => <Star />)}
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <span>Foundly Group</span>
                </Item>
                <Item>
                   { [...Array(5)].map((e, i) => <Star />)}
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <span>Foundly Group</span>
                </Item>
             </Items>
          </Container>
