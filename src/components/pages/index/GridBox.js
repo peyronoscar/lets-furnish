@@ -48,10 +48,14 @@ const Text = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      flex: 0 0 48%;
+      flex: 0 0 46%;
+
+      h2{
+         font-size: 1.9rem;
+         width: 70%;
+      }
    }
 `
-
 
 const Image = styled.div`
    flex: 0 0 100%;

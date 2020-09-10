@@ -25,7 +25,7 @@ const Item = styled.div`
 
    svg{
       width: 33%;
-      max-width: 120px;
+      max-width: 100px;
       height: auto;
       margin-bottom: 2em;
    }

@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       color: ${props => props.theme.colors.text };
       font-family: 'Poppins', sans-serif;
+      outline-color: ${props => props.theme.colors.text };
    }
 
    ul{

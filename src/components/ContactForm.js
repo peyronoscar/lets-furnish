@@ -6,6 +6,10 @@ import { Container, Button } from './'
 const FormWrapper = styled.div`
    background: ${props => props.theme.colors.light};
    padding: 4em 0;
+
+   @media ${props => props.theme.breakpoints.md } {
+      padding: 5.7em 0;
+   }
 `
 
 const FormHeader = styled.div`
@@ -15,33 +19,80 @@ const FormHeader = styled.div`
    h1{
       margin: 0;
       font-size: 1.9rem;
+      font-weight: 600;
+   }
+
+   @media ${props => props.theme.breakpoints.md } {
+      text-align: left;
+      margin-bottom: 2.5em;
+
+      h1{
+         font-size: 2.2rem;
+         line-height: 1.2em;
+         max-width: 400px;
+      }
    }
 `
 
 const Form = styled.form`
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-gap: 2em 0;
-
-   @media ${props => props.theme.breakpoints.md } {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2em 4em;
-   }
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 `
 
 const FormItem = styled.div`
+   flex: 0 0 100%;
+   padding: 1.3em 0;
+
    input, label{
       display: block;
       width: 100%;
    }
 
+   label{
+      margin-bottom: .25em;
+      font-weight: 500;
+   }
+
    input{
       border: 0;
-      border-bottom: 1px solid #000;
+      border-bottom: 2px solid #000;
       border-radius: 0;
       background: none;
+      padding: .75em 0;
+      font-weight: 500;
+      
+      :focus{
+         outline: none;
+         border-bottom: 2px solid ${props => props.theme.colors.main};
+      }
+
+      ::placeholder{
+         color: #717171;
+      }
+   }
+   
+   @media ${props => props.theme.breakpoints.md } {
+      flex: 0 0 46%;
    }
 `
+
+const ButtonWrapper = styled.div`
+   flex: 0 0 100%;
+   text-align: center;
+   margin-top: 2.2em;
+
+   input{
+      width: 80%;
+      max-width: 320px;
+   }
+
+   @media ${props => props.theme.breakpoints.md } {
+      margin-left: auto;
+      text-align: right;
+   }
+`
+
 export const ContactForm = () => {
    return (
       <FormWrapper>
@@ -52,12 +103,12 @@ export const ContactForm = () => {
             <Form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                <input type="hidden" name="contact" value="contact" />
                <FormItem>
-                  <label htmlFor="firstname">Förnamn</label>
-                  <input type="text" name="firstname" placeholder="Skriv in ditt förnamn" />
+                  <label htmlFor="name">Kontaktperson</label>
+                  <input type="text" name="name" placeholder="Skriv in ditt namn" />
                </FormItem>
                <FormItem>
-                  <label htmlFor="surname">Efternamn</label>
-                  <input type="text" name="surname" placeholder="Skriv in ditt efternamn" />
+                  <label htmlFor="company">Företagsnamn</label>
+                  <input type="text" name="company" placeholder="Skriv in ditt företagsnamn" />
                </FormItem>
                <FormItem>
                   <label htmlFor="tel">Telefon</label>
@@ -67,9 +118,11 @@ export const ContactForm = () => {
                   <label htmlFor="email">E-postadress</label>
                   <input type="email" name="email" placeholder="Skriv in din e-postadress" />
                </FormItem>
-               <Button btnStyle="dark">
-                  <input type="submit" value="Skicka uppgifter"/>
-               </Button>
+               <ButtonWrapper>
+                  <Button btnStyle="dark">
+                     <input type="submit" value="Skicka uppgifter"/>
+                  </Button>
+               </ButtonWrapper>
             </Form>
          </Container>
       </FormWrapper>

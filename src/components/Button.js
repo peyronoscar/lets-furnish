@@ -5,6 +5,7 @@ const ButtonWrapper = styled.span`
    > * {
       padding: 1.3em 2em;
       display: inline-block;
+      border: 0;
       border-radius: 4px;
       font-size: .9rem;
       font-weight: 600;
