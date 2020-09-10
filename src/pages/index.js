@@ -12,7 +12,7 @@ const HomePage = () => {
          <Services />
          <Banner />
          <Reviews />
-         <ContactForm />
+         <ContactForm headline="Bli en av våra samarbetspartners" />
       </>
    )
 }

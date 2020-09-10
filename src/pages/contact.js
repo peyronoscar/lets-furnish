@@ -1,13 +1,19 @@
-import React from "react"
-
-import { SEO } from "../components/"
-import { Hero } from "../components/pages/contact"
+import React, { useEffect } from 'react'
+import Theme from '../themes/theme'
+import { SEO, ContactForm } from "../components/"
 
 const ContactPage = () => {
+   useEffect(() => {
+      document.body.style.background = Theme.colors.light;
+      return () => {
+         document.body.style.background = ''
+      }
+   }, []);
+
    return (
       <>
          <SEO title="Contact" />
-         <Hero />
+         <ContactForm headline="Vad kan vi hjälpa dig med?" textarea={true} />
       </>
    )
 }

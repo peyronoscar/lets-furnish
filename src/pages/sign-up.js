@@ -13,7 +13,7 @@ const SignUpPage = () => {
    return (
       <>
          <SEO title="Sign Up" />
-         <ContactForm />
+         <ContactForm headline="Bli en av våra samarbetspartners" />
       </>
    )
 }

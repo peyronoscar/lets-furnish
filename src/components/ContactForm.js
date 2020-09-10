@@ -44,7 +44,7 @@ const FormItem = styled.div`
    flex: 0 0 100%;
    padding: 1.3em 0;
 
-   input, label{
+   input, label, textarea{
       display: block;
       width: 100%;
    }
@@ -54,13 +54,14 @@ const FormItem = styled.div`
       font-weight: 500;
    }
 
-   input{
+   input, textarea{
       border: 0;
       border-bottom: 2px solid #000;
       border-radius: 0;
       background: none;
       padding: .75em 0;
       font-weight: 500;
+      resize: none;
       
       :focus{
          outline: none;
@@ -88,17 +89,24 @@ const ButtonWrapper = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      margin-left: auto;
-      text-align: right;
+      &.float-right{
+         margin-left: auto;
+         text-align: right;
+      }
+
+      &.float-left{
+         margin-right: auto;
+         text-align: left;
+      }
    }
 `
 
-export const ContactForm = () => {
+export const ContactForm = ({ headline, textarea }) => {
    return (
       <FormWrapper>
          <Container>
             <FormHeader>
-               <h1>Bli en av våra samarbetspartners</h1>
+               <h1>{headline}</h1>
             </FormHeader>
             <Form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                <input type="hidden" name="contact" value="contact" />
@@ -118,7 +126,14 @@ export const ContactForm = () => {
                   <label htmlFor="email">E-postadress</label>
                   <input type="email" name="email" placeholder="Skriv in din e-postadress" />
                </FormItem>
-               <ButtonWrapper>
+               { textarea ? (
+                  <FormItem>
+                     <label htmlFor="message">Meddelande</label>
+                     <textarea placeholder="Skriv ditt meddelande" rows="4"></textarea>
+                  </ FormItem>
+               )
+               : null }
+               <ButtonWrapper className={ textarea ? 'float-left' : 'float-right' }>
                   <Button btnStyle="dark">
                      <input type="submit" value="Skicka uppgifter"/>
                   </Button>
