@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { GlobalContext } from "../../context/GlobalContext"
 
 import { Container } from '../'
+import { Cross } from '../../icons/Cross'
 
 const VideoWrapper = styled.div`
    max-width: 1200px;
@@ -12,14 +13,20 @@ const VideoWrapper = styled.div`
 
 const VideoBtn = styled.div`
    position: absolute;
-   top: -2em;
+   top: -2.4em;
    right: 0;
 
    button{
       background: #fff;
-      padding: .8em;
+      padding: .4em;
       border: none;
       border-radius: 50%;
+
+      svg{
+         width: 1.3em;
+         height: auto;
+         display: block;
+      }
    }
 `
 
@@ -29,7 +36,7 @@ const VideoInner = styled.div`
 
    iframe{
       position: absolute;
-      margin-top: .5em;
+      margin-top: .6em;
       top: 0;
       left: 0;
       width: 100%;
@@ -45,7 +52,9 @@ export const Video = ({ videoSrcURL, videoTitle}) => {
       <VideoWrapper>
          <Container>
             <VideoBtn>
-               <button onClick={() => setIsModalOpen(false)}> </button>
+               <button onClick={() => setIsModalOpen(false)}>
+                  <Cross />
+               </button>
             </VideoBtn>
             <VideoInner>
                <iframe

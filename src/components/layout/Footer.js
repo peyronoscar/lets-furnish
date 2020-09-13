@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import { Container } from '../'
+import { Flag } from '../../icons/Flag'
 
 const FooterWrapper = styled.footer`
    background: ${props => props.theme.colors.main};
@@ -59,6 +60,10 @@ const FooterInner = styled.div`
          font-size: .9rem;
          line-height: 2.1em;
       }
+      
+      a:hover{
+         text-decoration: underline;
+      }
    }
 `
 
@@ -99,11 +104,24 @@ const FooterDrop = styled.div`
    .drop-down{
       background: #f5eeeb;
       color: ${props => props.theme.colors.text };
-      padding: 1em 2em;
+      padding: .8em;
       max-width: 300px;
       width: 100%;
       border-radius: 4px;
       font-weight: 500;
+
+      svg{
+         width: 1.7em;
+         display: inline-block;
+         vertical-align: middle;
+         border-radius: 100%;
+         margin-right: .8em;
+      }
+
+      span{
+         display: inline-block;
+         vertical-align: middle;
+      }
    }
 
    @media ${props => props.theme.breakpoints.md } {
@@ -127,7 +145,7 @@ const Copyright = styled.div`
    text-align: center;
 
    p{
-      font-weight: 500;
+      font-weight: 400;
    }
 
    @media ${props => props.theme.breakpoints.md } {
@@ -183,7 +201,8 @@ export const Footer = () => {
                   <FooterDrop>
                      <h6>Språk</h6>
                      <div className="drop-down">
-                        Svenska
+                        <Flag />
+                        <span>Svenska</span>
                      </div>
                   </FooterDrop>
                </FooterInner>

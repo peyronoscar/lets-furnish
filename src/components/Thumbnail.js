@@ -4,17 +4,31 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { GlobalContext } from '../context/GlobalContext'
+import { PlayButton } from '../icons/PlayButton'
 
 const ThumbnailWrapper = styled.div`
    flex: 0 0 100%;
    margin-top: 2.5em;
    text-align: center;
 
-   button{
+   > div{
       margin-top: 1.2em;
+   }
+
+   button{
       font-weight: 600;
       font-size: .9em;
-      color: ${props => props.theme.colors.main};
+
+      svg{
+         display: inline-block;
+         vertical-align: middle;
+         margin-right: .5em;
+      }
+
+      span{
+         display: inline-block;
+         vertical-align: middle;
+      }
    }
 
    &.hidden-mobile{
@@ -55,7 +69,10 @@ export const Thumbnail = ({ className, modal }) => {
          <Img fluid={data.file.childImageSharp.fluid} />
          { modal ? (
             <div>
-               <button onClick={() => setIsModalOpen(true)}>Se reklamfilmen</button>
+               <button onClick={() => setIsModalOpen(true)}>
+                  <PlayButton />
+                  <span>Se reklamfilmen</span>
+               </button>
             </div>
          ) : null }
       </ThumbnailWrapper>
