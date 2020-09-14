@@ -35,9 +35,9 @@ export const CallToAction = () => {
       <CallWrapper>
          <Container>
             <h2>Intresserad? Anslut idag!</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur deserunt voluptatibus ea aperiam suscipit quam commodi odio itaque alias sapiente nobis, perferendis, optio eius officia similique neque, praesentium veniam!</p>
+            <p>Ta chansen och anslut ditt företag till Let's Furnish nätverk redan idag. Skicka in en intresseanmälan så återkommer vi vanligtvis inom 48 timmar.</p>
             <Button btnStyle="main">
-               <Link to="/anslut">Anmäl intresse</Link>
+               <Link to="/sign-up">Anmäl intresse</Link>
             </Button>
          </Container>
       </CallWrapper>

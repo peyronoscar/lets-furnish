@@ -21,7 +21,7 @@ const ContactPage = () => {
 
    return (
       <>
-         <SEO title="Contact" />
+         <SEO title="Kontakt" />
          <FormWrapper>
             <ContactForm headline="Vad kan vi hjälpa dig med?" textarea={true} />
          </FormWrapper>

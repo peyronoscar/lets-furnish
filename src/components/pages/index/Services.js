@@ -42,7 +42,7 @@ const Item = styled.div`
    padding: 1.6em 1em;
 
    svg{
-      height: 7em;
+      height: 7.5em;
       max-width: 100px;
       margin-bottom: 1em;
    }
@@ -62,7 +62,7 @@ export const Services = () => {
          <Container>
             <Heading>
                <h2>Hur fungerar det?</h2>
-               <p>Ett samarbete med Let's Furnish ska vara lönsamt, --- och inte minst oerhört simpelt. Detta är trots allt grundidéen bakom vårt affärsmodell. Med dessa ledord i baktanke har vi  utformat våra effektiva kanaler som gynnar dig som företagre, såväl som dina konsumenter.</p>
+               <p>Ett samarbete med Let's Furnish ska för dig som samarbetspartner alltid vara oerhört simpelt. Detta är trots allt grundidéen bakom vårt affärsmodell. Med detta ledord i baktanke har vi utformat våra effektiva kanaler som gynnar dig som företagre, såväl som dina konsumenter.</p>
             </Heading>
             <Items>
                <Item>

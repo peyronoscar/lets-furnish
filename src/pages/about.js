@@ -7,7 +7,7 @@ const AboutPage = () => {
 
    return (
       <>
-         <SEO title="About" />
+         <SEO title="Om oss" />
          <Hero />
          <GridBox />
          <CallToAction />

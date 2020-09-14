@@ -6,7 +6,7 @@ import { Hero, GridBox, Services, Banner, Reviews } from "../components/pages/in
 const HomePage = () => {
    return (
       <>
-         <SEO title="Home" />
+         <SEO title="Hem" />
          <Hero />
          <GridBox />
          <Services />

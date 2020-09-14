@@ -22,7 +22,7 @@ const SignUpPage = () => {
 
    return (
       <>
-         <SEO title="Sign Up" />
+         <SEO title="Anslut" />
          <FormWrapper>
             <ContactForm headline="Bli en av våra samarbetspartners" />
          </FormWrapper>
