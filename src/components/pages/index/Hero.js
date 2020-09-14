@@ -14,6 +14,7 @@ const HeroWrapper = styled.div`
    display: flex;
    flex-wrap: wrap;
    position: relative;
+   overflow: hidden;
 
    @media ${props => props.theme.breakpoints.md } {
       max-height: 800px;
