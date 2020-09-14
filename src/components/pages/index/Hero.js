@@ -27,6 +27,8 @@ const HeroWrapper = styled.div`
 
 const HeroInner = styled.div`
    padding-bottom: 3em;
+   z-index: 2;
+   position: relative;
 
    h1{
       margin: 0;
@@ -57,6 +59,7 @@ const HeroImage = styled.div`
    width: 100%;
    flex: 0 0 100%;
    overflow: hidden;
+   z-index: 1;
 
    @media ${props => props.theme.breakpoints.md } {
       position: absolute;

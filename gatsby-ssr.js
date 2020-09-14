@@ -20,16 +20,45 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       color: ${props => props.theme.colors.text };
-      font-size: 1rem;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      outline-color: ${props => props.theme.colors.text };
    }
 
    ul{
       list-style: none;
    }
 
+   p{
+      line-height: 1.7em;
+   }
+
    button{
       cursor: pointer;
+      border: none;
+      background: none;
+      outline: 0;
+   }
+
+   .btn{
+      padding: 1em 2em;
+      border: 0;
+      border-radius: 4px;
+   }
+
+   .btn--light{
+      background: #fff;
+      color: #000;
+   }
+
+   .btn--dark{
+      background: #000;
+      color: #fff;
+   }
+
+   .btn--dark-border{
+      border: 2px solid #000;
+      background: none;
+      color: #000;
    }
 
    @media ${props => props.theme.breakpoints.sm } {

@@ -50,6 +50,7 @@ const Text = styled.div`
 
       h2{
          font-size: 1.9rem;
+         line-height: 1.35em;
          width: 70%;
       }
    }
