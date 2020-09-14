@@ -28,16 +28,22 @@ const Text = styled.div`
    flex: 0 0 100%;
 
    .hidden-mobile{
-      display: none;
+      display: block;
+      margin-top: 1em;
    }
 
    @media ${props => props.theme.breakpoints.md } {
       flex: 0 0 46%;
+
+      .hidden-mobile{
+         display: none;
+      }
    }
 
    @media ${props => props.theme.breakpoints.lg } {
       .hidden-mobile{
          display: block;
+         margin-top: 1em;
       }
    }
 `
@@ -49,9 +55,9 @@ export const GridBox = () => {
          <Container>
             <GridBoxInner>
                <Text>
-                  <p>Perspiciatis autem dolor quidem eveniet, cumque eaque recusandae voluptate nulla sed repellendus dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis autem dolor quidem eveniet, cumque eaque recusandae voluptate nulla sed repellendus.
+                  <p>Teamet bakom Let’s Furnish har tillsammans 14 års erfarenhet av marknadsföring inom diverse områden och branscher. Grundarna, NAMN (?), identifierade under 2020 (?) ett påtagligt gap/avstånd mellan kunder på nätet och företag verksamma inom möbelbranschen. Här växte Let’s Furnish koncept fram.
                      <span className="hidden-mobile">
-                        Lorem ipsum dolor sit amet, consecte adiping elit. Sed lacus diam, faucibus nec tincidunt quis, dictum nec enim. Suspendiss. felis elit, varius non consectetur vel, blandit ac massa.
+                        Let’s Furnish samlar attraktiva och relevanta varumärken under ett och samma tak för att på ett effektivt sätt skapa en samlad länk till tänkbara konsumenter. Med vårt nätverk hjälper vi dig och din verksamhet att växa.
                      </span>
                   </p>
                </Text>

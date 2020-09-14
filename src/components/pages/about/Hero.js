@@ -47,7 +47,7 @@ export const Hero = () => {
          <Container>
             <Content>
                <span>Om Let's Furnish</span>
-               <h1>För dig som vill nå ut till fler kunder</h1>
+               <h1>Marknadsföringskanal som ger resultat</h1>
             </Content>
          </Container>
       </HeroWrapper>
