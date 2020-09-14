@@ -110,7 +110,7 @@ export const ContactForm = ({ headline, textarea }) => {
                <h1>{headline}</h1>
             </FormHeader>
             <Form name="contact" method="POST" action={ textarea ? "/success-contact/" : "/success-partner/" } data-netlify="true" data-netlify-honeypot="bot-field">
-               <input type="hidden" name="form-name" value="contact Form" />
+               <input type="hidden" name="form-name" value="contact" />
                <FormItem>
                   <label htmlFor="name">Kontaktperson</label>
                   <input type="text" name="name" placeholder="Skriv in ditt namn" />
