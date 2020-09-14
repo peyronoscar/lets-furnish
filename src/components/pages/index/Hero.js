@@ -112,7 +112,7 @@ export const Hero = () => {
          <Container>
             <HeroInner>
                <h1>Publicitet när det<br />är som lättast</h1>
-               <p>Det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder och andra intressenter.</p>
+               <p>Let's Furnish är det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder och andra intressenter.</p>
                <Button btnStyle="dark">
                   <Link to="/sign-up">Anslut idag</Link>
                </Button>
