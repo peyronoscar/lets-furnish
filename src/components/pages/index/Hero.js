@@ -41,16 +41,17 @@ const HeroInner = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
+      width: 50%;
+      padding-bottom: 0;
+
       h1{
-         font-size: 2.4rem;
+         font-size: 2.6rem;
+         line-height: 1.25em;
       }
 
       p{
          font-size: 1.1rem;
       }
-
-      width: 50%;
-      padding-bottom: 0;
    }
 `
 
@@ -70,7 +71,7 @@ const HeroImage = styled.div`
 `
 
 const ImageInner = styled.div`
-   width: 80%;
+   width: 84%;
    max-width: 310px;
    margin: 0 auto;
    position: relative;
@@ -109,8 +110,8 @@ export const Hero = () => {
       <HeroWrapper>
          <Container>
             <HeroInner>
-               <h1>Rabatt till kunder.<br />Done Right.</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique autem corporis modi iste nisi laudantium esse ipsam commodi.</p>
+               <h1>Publicitet när det<br />är som lättast</h1>
+               <p>Det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder och andra intressenter.</p>
                <Button btnStyle="dark">
                   <Link to="/sign-up">Anslut idag</Link>
                </Button>

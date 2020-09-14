@@ -1,7 +1,7 @@
 module.exports = {
    siteMetadata: {
       title: `Let's Furnish Sweden AB`,
-      description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi praesentium, illum, magnam a inventore accusamus exercitationem magni, maxime tenetur vel quaerat.`,
+      description: `Det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder och andra intressenter.`,
       author: `@lets-furnish`,
       instagram: `https://instagram.com`,
       facebook: `https://facebook.com`,

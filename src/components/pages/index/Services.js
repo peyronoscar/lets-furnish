@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Container } from '../../'
-import { Badge } from '../../../icons/Badge'
+import { Keys, Phone, Cart } from '../../../icons/'
 
 const ServicesWrapper = styled.div`
    background: #fbfbfb;
@@ -42,9 +42,8 @@ const Item = styled.div`
    padding: 1.6em 1em;
 
    svg{
-      width: 33%;
+      height: 7em;
       max-width: 100px;
-      height: auto;
       margin-bottom: 1em;
    }
 
@@ -63,20 +62,20 @@ export const Services = () => {
          <Container>
             <Heading>
                <h2>Hur fungerar det?</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, nulla? Consectetur vel est architecto incidunt aliquam molestias magni odio! Tempora iusto corporis placeat esse fugiat rerum sapiente, dolores quae autem!</p>
+               <p>Ett samarbete med Let's Furnish ska vara lönsamt, --- och inte minst oerhört simpelt. Detta är trots allt grundidéen bakom vårt affärsmodell. Med dessa ledord i baktanke har vi  utformat våra effektiva kanaler som gynnar dig som företagre, såväl som dina konsumenter.</p>
             </Heading>
             <Items>
                <Item>
-                  <Badge />
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <Keys />
+                  <p>Efter det att en bostadsaffär genomförts skickas ett sms från mäklarbyrån till kunden samma kväll.</p>
                </Item>
                <Item>
-                  <Badge />
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <Phone />
+                  <p>I meddelandet erbjuder mäklarbyrån exlusiva erbjudanden hos våra samarbetspartners. Här har du möjlighet att synas.</p>
                </Item>
                <Item>
-                  <Badge />
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
+                  <Cart />
+                  <p>Med en personlig rabattkod skickas kunden vidare till din webbplats och du har precis fått en potentiell kund.</p>
                </Item>
             </Items>
          </Container>

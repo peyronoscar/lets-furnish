@@ -65,15 +65,15 @@ export const GridBox = () => {
                <GridRow>
                   <Text>
                      <h2>För dig som vill nå ut till fler kunder</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat quae nihil neque rerum laboriosam mollitia. Illo vitae dolore sunt distinctio ullam ratione assumenda, eveniet ea in unde hic quidem.</p>
+                     <p>Let’s Furnish samlar attraktiva och relevanta varumärken under ett och samma tak för att på ett effektivt sätt skapa en samlad länk till tänkbara konsumenter. Med vårt nätverk hjälper vi dig och din verksamhet att växa.</p>
                   </Text>
                   <Thumbnail modal={true} />
                </GridRow>
                <GridRow className="grid-row--2">
                   <Thumbnail className="hidden-mobile" />
                   <Text>
-                     <h2>Ta kontroll och simma lugn</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae animi, beatae, velit, fuga corrupti unde aspernatur possimus ipsa id ex alias nulla? Blanditiis distinctio accusantium quaerat eius molestias aspernatur.</p>
+                     <h2>Så att ni kan fokusera på det ni gör bra</h2>
+                     <p>Vårt koncept bygger på tanken av att reducera avståndet mellan duktiga företagare och den önskade målgruppen. Genom ett i grunden simpelt koncept strävar vi efter att erbjuda kunder marknadsföring av betydelse och därigenom skapa försäljning för ditt bolag.</p>
                      <Button btnStyle="main">
                         <Link to="/about">Läs mer om Let's Furnish</Link>
                      </Button>

@@ -62,12 +62,12 @@ export const Banner = () => {
          <Container>
             <BannerInner>
                <Heading>
-                  <h2>Vi ger dig chansen att synas</h2>
+                  <h2>Är du inte övertygad än?</h2>
                </Heading>
                <Text>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id quam quasi est, sit voluptatum eius vitae aperiam qui nostrum ipsam! Aperiam harum iure aspernatur est in beatae cumque numquam?</p>
+                  <p>Har du frågor eller funderingar kring vårt koncept är du alltid välkommen att kontakta oss. Vi finns alltid tillgängliga och återkommer vanligtvis med ett svar inom 48 timmar.</p>
                   <Button btnStyle="light">
-                     <Link to="/about">Läs mer om Let's Furnish</Link>
+                     <Link to="/contact">Kontakta oss</Link>
                   </Button>
                </Text>
             </BannerInner>

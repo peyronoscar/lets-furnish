@@ -196,7 +196,7 @@ export const Footer = () => {
                   </FooterList>
                   <FooterDescription>
                      <h6>Om Let's Furnish</h6>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad perferendis nihil, cumque, modi asperiores eligendi assumenda tenetur fugit nemo ab doloremque, sunt culpa quisquam laborum quo facilis iusto. Aperiam, quidem.</p>
+                     <p>Let's Furnish är det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder. Vi samlar relevanta varumärken under ett och samma tak för att på ett effektivt sätt skapa en samlad länk till konsumenter.</p>
                   </FooterDescription>
                   <FooterDrop>
                      <h6>Språk</h6>

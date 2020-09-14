@@ -75,24 +75,24 @@ export const Reviews = () => {
       <ReviewsWrapper id="reviews">
          <Container>
             <Heading>
-               <h2>Hör från våra samarbetspartners</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, nulla? Consectetur vel est architecto incidunt aliquam molestias magni odio! Tempora iusto corporis placeat esse fugiat rerum sapiente, dolores quae autem!</p>
+               <h2>Lyssna inte på oss. Lyssna på våra kunder.</h2>
+               <p>På Let's Furnish värdesätter vi all återkoppling vi kan få från kunder och samarbetspartners. Nedan har du möjligthet att ta del av ett urval av de recensioner som vi kontinuerligt samlar in.</p>
             </Heading>
             <Items>
                <Item>
-                  { [...Array(5)].map((e, i) => <Star />)}
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
-                  <span>Foundly Group</span>
+                  { [...Array(5)].map((e, i) => <Star key={i} />)}
+                  <p>Mycket nöjd med rabattkoden jag fick efter mitt husköp. Med ett fåtal klick hittade jag produkter som passade mig.</p>
+                  <span>Oscar P. | Helsingborg</span>
                </Item>
                <Item>
-                  { [...Array(5)].map((e, i) => <Star />)}
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
-                  <span>Foundly Group</span>
+                  { [...Array(5)].map((e, i) => <Star key={i} />)}
+                  <p>Precis vad jag behövde i rätt tidpunkt. Bra koncept och mycket enkel köpprocess. Tack!</p>
+                  <span>Moa J. | Falun</span>
                </Item>
                <Item>
-                  { [...Array(5)].map((e, i) => <Star />)}
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur reiciendis rerum quam vitae, repellat atque, at voluptatum et.</p>
-                  <span>Foundly Group</span>
+                  { [...Array(5)].map((e, i) => <Star key={i} />)}
+                  <p>Utmärkt kundservice när jag hade frågor gällande en intressant rabatt. Trevligt bemötande som ledde till ett lyckat köp.</p>
+                  <span>Jesper K. | Borlänge</span>
                </Item>
             </Items>
          </Container>

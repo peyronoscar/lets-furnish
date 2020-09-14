@@ -52,7 +52,14 @@ const ThumbnailWrapper = styled.div`
 export const Thumbnail = ({ className, modal }) => {
    const data = useStaticQuery(graphql`
       query indexGridQuery {
-         file(relativePath: {eq: "thumbnail.png"}) {
+         thumbnail: file(relativePath: {eq: "videoThumbnail.png"}) {
+            childImageSharp {
+               fluid{
+                  ...GatsbyImageSharpFluid_withWebp
+               }
+            }
+         }
+         phone: file(relativePath: {eq: "indexGridPhone.png"}) {
             childImageSharp {
                fluid{
                   ...GatsbyImageSharpFluid_withWebp
@@ -66,7 +73,11 @@ export const Thumbnail = ({ className, modal }) => {
 
    return (
       <ThumbnailWrapper className={className}>
-         <Img fluid={data.file.childImageSharp.fluid} />
+         { modal ? (
+            <Img fluid={ data.thumbnail.childImageSharp.fluid } />
+         ) : (
+            <Img fluid={ data.phone.childImageSharp.fluid } />
+         ) }
          { modal ? (
             <div>
                <button onClick={() => setIsModalOpen(true)}>
