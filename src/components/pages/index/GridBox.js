@@ -75,7 +75,7 @@ export const GridBox = () => {
                      <h2>Så att ni kan fokusera på det ni gör bra</h2>
                      <p>Vårt koncept bygger på tanken av att reducera avståndet mellan duktiga företagare och den önskade målgruppen. Genom ett i grunden simpelt koncept strävar vi efter att erbjuda kunder marknadsföring av betydelse och därigenom skapa försäljning för ditt bolag.</p>
                      <Button btnStyle="main">
-                        <Link to="/about">Läs mer om Let's Furnish</Link>
+                        <Link to="/om-oss">Läs mer om Let's Furnish</Link>
                      </Button>
                   </Text>
                </GridRow>

@@ -75,7 +75,7 @@ export const OverlayNav = () => {
                      </li>
                      <li>
                         <Link
-                           to="/contact"
+                           to="/kontakt"
                            onClick={() => setIsNavOpen(false)}
                            activeClassName="active"
                            partiallyActive={true}
@@ -83,13 +83,13 @@ export const OverlayNav = () => {
                      </li>
                      <li>
                         <Link
-                        to="/#reviews"
+                        to="/#recensioner"
                         onClick={() => setIsNavOpen(false)}
                         >Recensioner</Link>
                      </li>
                      <li>
                         <Link
-                        to="/about"
+                        to="/om-oss"
                         onClick={() => setIsNavOpen(false)}
                         activeClassName="active"
                         partiallyActive={true}
@@ -97,7 +97,7 @@ export const OverlayNav = () => {
                      </li>
                      <li>
                         <Link
-                        to="/sign-up"
+                        to="/anslut"
                         onClick={() => setIsNavOpen(false)}
                         activeClassName="active"
                         partiallyActive={true}
@@ -110,7 +110,7 @@ export const OverlayNav = () => {
                <Container>
                   <Button btnStyle="light">
                      <Link
-                        to="/sign-up"
+                        to="/anslut"
                         onClick={() => setIsNavOpen(false)}
                         >Kom igång</Link>
                   </Button>

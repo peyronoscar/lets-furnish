@@ -126,13 +126,13 @@ export const Nav = () => {
                         <Link to="/">Hem</Link>
                      </li>
                      <li>
-                        <Link to="/about">Om Let's Furnish</Link>
+                        <Link to="/om-oss">Om Let's Furnish</Link>
                      </li>
                      <li>
-                        <Link to="/contact">Kontakt</Link>
+                        <Link to="/kontakt">Kontakt</Link>
                      </li>
                      <li>
-                        <Link to="/sign-up" className="btn--dark-border">Kom igång</Link>
+                        <Link to="/anslut" className="btn--dark-border">Kom igång</Link>
                      </li>
                   </ul>
                </div>

@@ -67,7 +67,7 @@ export const Banner = () => {
                <Text>
                   <p>Har du frågor eller funderingar kring vårt koncept är du alltid välkommen att kontakta oss. Vi finns alltid tillgängliga och återkommer vanligtvis med ett svar inom 48 timmar.</p>
                   <Button btnStyle="light">
-                     <Link to="/contact">Kontakta oss</Link>
+                     <Link to="/kontakt">Kontakta oss</Link>
                   </Button>
                </Text>
             </BannerInner>

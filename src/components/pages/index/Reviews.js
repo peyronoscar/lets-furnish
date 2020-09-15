@@ -72,7 +72,7 @@ const Item = styled.div`
 
 export const Reviews = () => {
    return (
-      <ReviewsWrapper id="reviews">
+      <ReviewsWrapper id="recensioner">
          <Container>
             <Heading>
                <h2>Lyssna inte på oss. Lyssna på våra kunder.</h2>

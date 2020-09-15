@@ -55,9 +55,9 @@ export const GridBox = () => {
          <Container>
             <GridBoxInner>
                <Text>
-                  <p>Teamet bakom Let’s Furnish har tillsammans 14 års erfarenhet av marknadsföring inom diverse områden och branscher. Grundarna, NAMN (?), identifierade under 2020 (?) ett påtagligt gap/avstånd mellan kunder på nätet och företag verksamma inom möbelbranschen. Här växte Let’s Furnish koncept fram.
+                  <p>Teamet bakom Let’s Furnish har tillsammans 14 års erfarenhet av marknadsföring inom diverse områden och branscher. Grundarna identifierade under 2020 ett påtagligt avstånd mellan kunder på nätet och företag verksamma inom möbelbranschen. Här växte Let’s Furnish koncept fram.
                      <span className="hidden-mobile">
-                        Let’s Furnish samlar attraktiva och relevanta varumärken under ett och samma tak för att på ett effektivt sätt skapa en samlad länk till tänkbara konsumenter. Med vårt nätverk hjälper vi dig och din verksamhet att växa.
+                        Let’s Furnish vision är att förenkla kommunikationen mellan lokala små- och medelstora företag och relevanta målgrupper. Vi hjälper både fysiska och digitala leverantörer att nå ut till sina kunder och därmed generera försäljning.
                      </span>
                   </p>
                </Text>
