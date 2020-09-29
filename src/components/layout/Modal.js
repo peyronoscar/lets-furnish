@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { GlobalContext } from '../../context/GlobalContext'
 
 import { Video } from './'
 
@@ -21,14 +20,12 @@ const ModalWrapper = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
-   cursor: pointer;
 `
 
 export const Modal = () => {
-   const { setIsModalOpen } = useContext(GlobalContext);
 
    return (
-      <ModalWrapper onClick={() => setIsModalOpen(false)}>
+      <ModalWrapper>
          <Video videoSrcURL="https://www.youtube.com/embed/k4MnqaYZIY4" />
       </ModalWrapper>
    )

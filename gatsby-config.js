@@ -53,6 +53,12 @@ module.exports = {
             // displayName: false
          },
       },
+      {
+         resolve: `gatsby-plugin-canonical-urls`,
+         options: {
+           siteUrl: `https://www.letsfurnish.se`,
+         },
+       },
       `gatsby-plugin-offline`
   ],
 }
