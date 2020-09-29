@@ -90,15 +90,7 @@ const ButtonWrapper = styled.div`
    }
 
    @media ${props => props.theme.breakpoints.md } {
-      &.float-right{
-         margin-left: auto;
-         text-align: right;
-      }
-
-      &.float-left{
-         margin-right: auto;
-         text-align: left;
-      }
+      text-align: right;
    }
 `
 
@@ -119,10 +111,13 @@ export const ContactForm = ({ headline, textarea }) => {
                   <label htmlFor="name">Kontaktperson</label>
                   <input type="text" name="name" placeholder="Skriv in ditt namn" />
                </FormItem>
-               <FormItem>
-                  <label htmlFor="company">Företagsnamn</label>
-                  <input type="text" name="company" placeholder="Skriv in ditt företagsnamn" />
-               </FormItem>
+               { !textarea ? (
+                     <FormItem>
+                        <label htmlFor="company">Företagsnamn</label>
+                        <input type="text" name="company" placeholder="Skriv in ditt företagsnamn" />
+                     </FormItem>
+                  ) : null
+               }
                <FormItem>
                   <label htmlFor="tel">Telefon</label>
                   <input type="tel" name="tel" placeholder="Skriv in ditt telefonnummer" />
@@ -134,11 +129,11 @@ export const ContactForm = ({ headline, textarea }) => {
                { textarea ? (
                   <FormItem>
                      <label htmlFor="message">Meddelande</label>
-                     <textarea placeholder="Skriv ditt meddelande" rows="4"></textarea>
+                     <textarea placeholder="Skriv ditt meddelande" rows="6"></textarea>
                   </ FormItem>
                )
                : null }
-               <ButtonWrapper className={ textarea ? 'float-left' : 'float-right' }>
+               <ButtonWrapper>
                   <Button btnStyle="dark">
                      <input type="submit" value={ textarea ? 'Skicka meddelande' : 'Skicka uppgifter' }/>
                   </Button>
