@@ -62,7 +62,7 @@ export const Services = () => {
          <Container>
             <Heading>
                <h2>Hur fungerar det?</h2>
-               <p>Ett samarbete med Let's Furnish ska för dig som samarbetspartner alltid vara oerhört simpelt. Detta är trots allt grundidén bakom vår affärsmodell. Med detta ledord i baktanke har vi utformat våra effektiva kanaler som gynnar dig som företagare, såväl som dina konsumenter.</p>
+               <p>Ett samarbete med Let's Furnish ska för dig som samarbetspartner alltid vara oerhört simpelt. Detta är trots allt grundidén bakom vår affärsmodell. Med detta ledord i baktanke har vi utformat våra effektiva kanaler som gynnar dig som företagare, såväl som dina kunder.</p>
             </Heading>
             <Items>
                <Item>
