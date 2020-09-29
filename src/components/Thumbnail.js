@@ -52,7 +52,7 @@ const ThumbnailWrapper = styled.div`
 export const Thumbnail = ({ className, modal }) => {
    const data = useStaticQuery(graphql`
       query indexGridQuery {
-         thumbnail: file(relativePath: {eq: "videoThumbnail.png"}) {
+         thumbnail: file(relativePath: {eq: "videoThumbnail.jpg"}) {
             childImageSharp {
                fluid{
                   ...GatsbyImageSharpFluid_withWebp

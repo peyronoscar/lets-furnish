@@ -72,8 +72,8 @@ export const GridBox = () => {
                <GridRow className="grid-row--2">
                   <Thumbnail className="hidden-mobile" />
                   <Text>
-                     <h2>Så att ni kan fokusera på det ni gör bra</h2>
-                     <p>Vårt koncept bygger på tanken av att reducera avståndet mellan duktiga företagare och den önskade målgruppen. Genom ett i grunden simpelt koncept strävar vi efter att erbjuda kunder marknadsföring av betydelse och därigenom skapa försäljning för ditt bolag.</p>
+                     <h2>Fokusera på det ni är bäst på</h2>
+                     <p>Vårt koncept bygger på tanken av att reducera avståndet mellan duktiga företagare och den önskade målgruppen. Genom ett simpelt koncept strävar vi efter att erbjuda kunder marknadsföring av betydelse och därigenom skapa försäljning för ditt bolag.</p>
                      <Button btnStyle="main">
                         <Link to="/om-oss">Läs mer om Let's Furnish</Link>
                      </Button>
