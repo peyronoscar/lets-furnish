@@ -129,7 +129,7 @@ export const ContactForm = ({ headline, textarea }) => {
                { textarea ? (
                   <FormItem>
                      <label htmlFor="message">Meddelande</label>
-                     <textarea placeholder="Skriv ditt meddelande" rows="6"></textarea>
+                     <textarea name="message" placeholder="Skriv ditt meddelande" rows="6"></textarea>
                   </ FormItem>
                )
                : null }
