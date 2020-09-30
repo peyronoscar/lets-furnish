@@ -3,9 +3,9 @@ module.exports = {
       title: `Let's Furnish Sweden AB`,
       description: `Det självklara valet för dig som vill exponera ditt varumärke till potentiella kunder och andra intressenter.`,
       author: `@lets-furnish`,
-      instagram: `https://instagram.com`,
-      facebook: `https://facebook.com`,
-      twitter: `https://twitter.com`,
+      instagram: `https://www.instagram.com/letsfurnishsweden/`,
+      facebook: `https://www.facebook.com/LetsFurnishSE`,
+      twitter: `https://twitter.com/lets__furnish`,
       youtube: `https://youtube.com`,
    },
    plugins: [
