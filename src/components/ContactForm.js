@@ -109,27 +109,27 @@ export const ContactForm = ({ headline, textarea }) => {
                ) }
                <FormItem>
                   <label htmlFor="name">Kontaktperson</label>
-                  <input type="text" name="name" placeholder="Skriv in ditt namn" />
+                  <input type="text" name="name" placeholder="Skriv in ditt namn" required/>
                </FormItem>
                { !textarea ? (
                      <FormItem>
                         <label htmlFor="company">Företagsnamn</label>
-                        <input type="text" name="company" placeholder="Skriv in ditt företagsnamn" />
+                        <input type="text" name="company" placeholder="Skriv in ditt företagsnamn" required/>
                      </FormItem>
                   ) : null
                }
                <FormItem>
                   <label htmlFor="tel">Telefon</label>
-                  <input type="tel" name="tel" placeholder="Skriv in ditt telefonnummer" />
+                  <input type="tel" name="tel" placeholder="Skriv in ditt telefonnummer" required/>
                </FormItem>
                <FormItem>
                   <label htmlFor="email">E-postadress</label>
-                  <input type="email" name="email" placeholder="Skriv in din e-postadress" />
+                  <input type="email" name="email" placeholder="Skriv in din e-postadress" required/>
                </FormItem>
                { textarea ? (
                   <FormItem>
                      <label htmlFor="message">Meddelande</label>
-                     <textarea name="message" placeholder="Skriv ditt meddelande" rows="6"></textarea>
+                     <textarea name="message" placeholder="Skriv ditt meddelande" rows="6" required></textarea>
                   </ FormItem>
                )
                : null }
