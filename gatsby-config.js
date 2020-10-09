@@ -9,6 +9,12 @@ module.exports = {
       youtube: `https://youtube.com`,
    },
    plugins: [
+      {
+         resolve: `gatsby-plugin-gtag`,
+         options: {
+           trackingId: `UA-180248481-1`,
+         },
+       },
       `gatsby-plugin-react-helmet`,
       {
          resolve: `gatsby-plugin-manifest`,
