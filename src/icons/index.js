@@ -1,3 +1,6 @@
 export * from './Keys'
 export * from './Phone'
 export * from './Cart'
+export * from './Flag'
+export * from './PhoneFooter'
+export * from './MailFooter'

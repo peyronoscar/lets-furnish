@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import { Container } from '../'
-import { Flag } from '../../icons/Flag'
+import { Flag, PhoneFooter, MailFooter } from '../../icons/index'
 
 const FooterWrapper = styled.footer`
    background: ${props => props.theme.colors.main};
@@ -146,6 +146,21 @@ const Copyright = styled.div`
 
    p{
       font-weight: 400;
+      margin: 12px 0;
+      line-height: 1;
+   }
+
+   span, svg{
+      display: inline-block;
+      vertical-align: middle;
+   }
+
+   svg{
+      margin-right: 6px;
+
+      *{
+         stroke-width: 20;
+      }
    }
 
    @media ${props => props.theme.breakpoints.md } {
@@ -210,7 +225,21 @@ export const Footer = () => {
          </FooterWrapper>
          <Copyright>
             <Container>
-               <p>&copy; {site.siteMetadata.title} | {new Date().getFullYear()}</p>
+               <p>
+                  <span>&copy; {site.siteMetadata.title} | {new Date().getFullYear()}</span>
+               </p>
+               <p>
+                  <a href="mailto:info@letsfurnish.se">
+                  <MailFooter />
+                  <span>info@letsfurnish.se</span>
+                  </a>
+               </p>
+               <p>
+                  <a href="tel:010-4056070">
+                     <PhoneFooter />
+                     <span>010-405 60 70</span>
+                  </a>
+               </p>
             </Container>
          </Copyright>
       </>
